@@ -1,0 +1,16 @@
+@model App.Models.ProductModel
+@{
+    var Product2 = ViewData["product"] as ProductModel;
+}
+<p>@ViewData["Title"]</p>
+<div class="card bg-primary text-white">
+    <h1 class="card-header">@Product2.Name</h1>
+    <div class="card-body">
+        <p class="card-text">
+            Giá: @Product2.Price
+        </p>
+    </div>
+</div>
+
+<hr>
+@this.Path
